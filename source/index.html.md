@@ -2,10 +2,9 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+  - cURL
+  - Python
+  - NodeJS
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -29,25 +28,19 @@ This example API documentation page was created with [Slate](https://github.com/
 
 > To authorize, use this code:
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
+```Python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 ```
 
-```shell
+```cURL
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
 ```
 
-```javascript
+```Node
 const kittn = require('kittn');
 
 let api = kittn.authorize('meowmeowmeow');
